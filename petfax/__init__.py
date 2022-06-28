@@ -7,12 +7,12 @@ def create_app():
     def hello():
         return "Hello, PetFax"
 
-    @app.route('/pets')
-    def pets():
-        return "These are our pets available for adoption"
-
     @app.route('/test')
     def test():
         return {"fname": "Prashant", "lname": "Kumar"}
+
+    # register blueprints
+    from . import pet
+    app.register_blueprint(pet.bp)
     
     return app
