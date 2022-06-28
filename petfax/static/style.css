@@ -26,3 +26,21 @@ img {
 .container {
     display: flex;
 }
+
+.form-control {
+    padding: 10px;
+}
+
+.form-control label {
+    font-weight: bold;
+}
+
+.form-control input,
+textarea,
+button {
+    background-color: slateblue;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    color: whitesmoke;
+}

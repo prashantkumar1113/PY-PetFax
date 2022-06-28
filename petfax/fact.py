@@ -4,4 +4,4 @@ bp = Blueprint('fact', __name__, url_prefix='/facts')
 
 @bp.route("/new")
 def new():
-    return "return new fact form"
+    return render_template("facts.html")
