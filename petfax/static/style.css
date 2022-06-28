@@ -1,0 +1,28 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: azure;
+}
+
+h1,
+h2 {
+    color: mediumseagreen;
+}
+
+p {
+    color: whitesmoke;
+    background-color: slateblue;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.container {
+    display: flex;
+}

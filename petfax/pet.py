@@ -6,6 +6,7 @@ import json
 pets = json.load(open("pets.json"))
 # print(pets)
 
+
 @bp.route('/')
 def index():
     # return "This is the pets index"
