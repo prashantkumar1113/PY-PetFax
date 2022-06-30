@@ -13,16 +13,16 @@
     </head>
     <body>
         <h1>Add a new fact</h1>
-        <form>
+        <form action="/facts" method="POST">
             <div class="form-control">
-                <label> Submitter: </label>
-                <input type="text" />
+                <label for="submitter"> Submitter: </label>
+                <input type="text" name="submitter" />
             </div>
             <div class="form-control">
-                <label>Fact:</label>
-                <textarea></textarea>
+                <label for="fact">Fact:</label>
+                <textarea name="fact"></textarea>
             </div>
-            <button>Submit Fact</button>
+            <button type="submit">Submit Fact</button>
         </form>
         <a href="/pets">Go back</a>
     </body>

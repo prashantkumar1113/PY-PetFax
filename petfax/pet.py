@@ -10,8 +10,8 @@ pets = json.load(open("pets.json"))
 @bp.route('/')
 def index():
     # return "This is the pets index"
-    return render_template("index.html", pets=pets)
+    return render_template("pets/index.html", pets=pets)
 
 @bp.route('/<int:index>')
 def show(index):
-    return render_template("pet.html", pet=pets[index])
+    return render_template("pets/pet.html", pet=pets[index])
